@@ -1,0 +1,254 @@
+{
+	"Construtora Alfa": {
+		"cod_construtora_pk": 10,
+		"nome": "Construtora Alfa S.A",
+		"nome_fantasia": "Alfa Incorporações",
+		"Telefones": [
+		  {
+			"id_telefone": 1,
+			"telefone": "(51) 3333-3334"
+		  },
+		  {
+			"id_telefone": 2,
+			"telefone": "(51) 3333-3335"
+		  },
+		  {
+			"id_telefone": 3,
+			"telefone": "(51) 3333-3336"
+		  }
+		],	
+		"Obras": [
+		  {
+			"cod_obra_pk": 115,
+			"nome": "Condomínio dos Lagos",
+			"logradouro_endereco": "Travessa dos Lagos",
+			"numero_endereco": 100,
+			"complemento_endereco": "Norte",
+			"Trabalhadores": [
+			  {
+				"cpf": "101.101.101-34",
+				"nome": "José Chaves",
+				"salario": "2200.00"
+			  },
+			  {
+				"cpf": "102.102.102-91",
+				"nome": "Pedro Passos",
+				"salario": "3502.18"
+			  },
+			  {
+				"cpf": "218.561.442-83",
+				"nome": "João Gomes",
+				"salario": "2800.87"
+			  },
+			  {
+				"cpf": "366.128.430-47",
+				"nome": "Kaike Lima",
+				"salario": "2400.35"
+			  },
+			  {
+				"cpf": "103.103.103-18",
+				"nome": "Maria Aparecida",
+				"salario": "3800.27"
+			  }
+			]
+		  },
+		  {
+			"cod_obra_pk": 116,
+			"nome": "Condomínio Araras",
+			"logradouro_endereco": "Avenida Rio Grande",
+			"numero_endereco": 22,
+			"complemento_endereco": "Lado A",
+			"Trabalhadores": [
+			  {
+				"cpf": "565.456.472-29",
+				"nome": "Gustavo Martins",
+				"salario": "2100.00"
+			  },
+			  {
+				"cpf": "719.775.293-05",
+				"nome": "Daniel Silva",
+				"salario": "2500.89"
+			  },
+			  {
+				"cpf": "631.635.057-08",
+				"nome": "Felipe Santos",
+				"salario": "3405.65"
+			  },
+			  {
+				"cpf": "104.104.104-52",
+				"nome": "Carlos Dutra",
+				"salario": "2900.00"
+			  },
+			  {
+				"cpf": "105.105.105-85",
+				"nome": "Mário Pires",
+				"salario": "4323.29"
+			  }
+			]
+		  }
+		],	
+		"Equipamentos": [
+		  {
+			"cod_equipamento": 301,
+			"nome": "Betoneira",
+			"valor_diaria": "100.00",
+			"Categoria": {
+			  "cod_categoria": 1,
+			  "descricao": "Concretagem"
+			},
+			"Aluguel": [
+				{
+					"cod_obra_pk": 115,
+					"data_inicio": "18/03/2022",
+					"data_termino": "24/10/2022"
+				}
+			]
+		  },
+		  {
+			"cod_equipamento": 302,
+			"nome": "Cortadora de Piso",
+			"valor_diaria": "10.00",
+			"fk_categoria_cod": 1,
+			"Categoria": {
+			  "cod_categoria": 1,
+			  "descricao": "Concretagem"
+			},
+			"Aluguel": [
+				{
+					"cod_obra_pk":"/",
+					"data_inicio": "/",
+					"data_termino": "/"
+				}
+			]
+		  },
+		  {
+			"cod_equipamento": 303,
+			"nome": "Mangote",
+			"valor_diaria": "30.50",
+			"fk_categoria_cod": 1,
+			"Categoria": {
+			  "cod_categoria": 1,
+			  "descricao": "Concretagem"
+			},
+			"Aluguel": [
+				{
+					"cod_obra_pk":"/",
+					"data_inicio": "/",
+					"data_termino": "/"
+				}
+			]
+		  },
+		  {
+			"cod_equipamento": 304,
+			"nome": "Guincho",
+			"valor_diaria": "250.00",
+			"Categoria": {
+				"cod_categoria": 2,
+				"descricao": "Acesso e Elevação"
+			},
+			"Aluguel": [
+				{
+					"cod_obra_pk": 115,
+					"data_inicio": "20/04/2022",
+					"data_termino": "02/08/2022"
+				},
+				{
+					"cod_obra_pk": 116,
+					"data_inicio": "22/10/2022",
+					"data_termino": "25/10/2022"
+				}
+			]
+		  },
+		  {
+			"cod_equipamento": 305,
+			"nome": "Gerador",
+			"valor_diaria": "451.00",
+			"Categoria": {
+				"cod_categoria": 3,
+				"descricao": "Geradores e Compressores"
+			},
+			"Aluguel": [
+				{
+					"cod_obra_pk": 116,
+					"data_inicio": "07/03/2022",
+					"data_termino": "10/03/2022"
+				}
+			]
+		  },
+		  {
+			"cod_equipamento": 306,
+			"nome": "Piso Metálico",
+			"valor_diaria": "150.00",
+			"Categoria": {
+				"cod_categoria": 4,
+				"descricao": "Andaimes"
+			},
+			"Aluguel": [
+				{
+					"cod_obra_pk": 115,
+					"data_inicio": "06/07/2021",
+					"data_termino": "18/07/2021"
+				},
+				{
+					"cod_obra_pk": 116,
+					"data_inicio": "12/09/2022",
+					"data_termino": "21/09/2022"
+				}
+			]
+		  },
+		  {
+			"cod_equipamento": 307,
+			"nome": "Furadeira de bancada",
+			"valor_diaria": "65.00",
+			"Categoria": {
+				"cod_categoria": 5,
+				"descricao": "Ferramenta Elétrica"
+			},
+			"Aluguel": [
+				{
+					"cod_obra_pk": 115,
+					"data_inicio": "04/03/2022",
+					"data_termino": "20/03/2022"
+				},
+				{
+					"cod_obra_pk": 116,
+					"data_inicio": "16/08/2022",
+					"data_termino": "24/08/2022"
+				}
+			]
+		  },
+		  {
+			"cod_equipamento": 308,
+			"nome": "Parafusadeira",
+			"valor_diaria": "37.00",
+			"Categoria": {
+				"cod_categoria": 5,
+				"descricao": "Ferramenta Elétrica"
+			},
+			"Aluguel": [
+				{
+					"cod_obra_pk": 116,
+					"data_inicio": "23/10/2022",
+					"data_termino": "25/10/2022"
+				}
+			]
+		  },
+		  {
+			"cod_equipamento": 309,
+			"nome": "Plaina",
+			"valor_diaria": "25.00",
+			"Categoria": {
+				"cod_categoria": 5,
+				"descricao": "Ferramenta Elétrica"
+			},
+			"Aluguel": [
+				{
+					"cod_obra_pk": 116,
+					"data_inicio": "04/08/2021",
+					"data_termino": "10/08/2021"
+				}
+			]
+		  }
+		]
+	}
+}
